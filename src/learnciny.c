@@ -31,14 +31,13 @@ enum days2
 #include <stdio.h>
 #include <string.h>
 
-#include "./my_header.h"
-#include "../my_lib/my_lib_header.h"
+#include "../lib/arithmetic.h"
 
 // declare function signatures in advance in a .h, or at the top of your c file.
 void function_1();
 int function_2(void);
 
-int add(int a, int b)
+int add2(int a, int b)
 {
   return a + b;
 };
@@ -46,7 +45,7 @@ int add(int a, int b)
 int main(void)
 {
   printf("Hello, World!\n");
-  int n = add(2, 3);
+  int n = add2(2, 3);
   printf("%d\n", n);
   int input;
   printf("Please enter a number: ");
